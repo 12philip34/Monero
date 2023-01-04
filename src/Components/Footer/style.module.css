@@ -26,11 +26,66 @@
 span{
     color: #ffffff;
     text-decoration: none;
+    transition: .5s;
+}
+
+span:hover{
+    margin-left: 10px;
+    color: #4c2f13;
+}
+
+.footerLast{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.footerLast a:hover{
+    color: #4c2f13;
+}
+
+.footerLast a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.linkUnderline {
+    display: inline-block;
+    position: relative;
+}
+
+.linkUnderline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4c2f13;
+    padding-bottom: -10px;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.linkUnderline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 @media only screen and (max-width: 768px) {
-    .flexWrap{
+    .flexWrap,
+    .footerLast
+    {
     display: flex;
         flex-direction: column;
+    }
+
+    .linkBox{
+        margin: 25px 0;
     }
 }

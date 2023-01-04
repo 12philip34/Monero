@@ -7,19 +7,19 @@ function BlogLinks (props) {
         <div>
             <div className={style.blogLinkBox}>
                 <div className={style.blogLink}>
-                    <span>
+                    <span data-aos="flip-up">
                         <a href="">Get Started</a>
                     </span>
-                    <span>
+                    <span data-aos="flip-up">
                         <a href="">Downloads</a>
                     </span>
-                    <span>
+                    <span data-aos="flip-up">
                         <a href="">Blogs</a>
                     </span>
-                    <span>
+                    <span data-aos="flip-up">
                         <a href="">Community</a>
                     </span>
-                    <span>
+                    <span data-aos="flip-up">
                         <a href="">Resources</a>
                     </span>
                 </div>

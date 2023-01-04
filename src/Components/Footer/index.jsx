@@ -8,7 +8,7 @@ import style from './style.module.css'
         <CDBFooter className={style.shadow}>
             <CDBBox display="flex" flex="column" className="mx-auto py-5" style={{ width: '90%' }}>
                 <CDBBox display="flex" justifyContent="between" className={style.flexWrap}>
-                    <CDBBox>
+                    <CDBBox className={style.linkBox} data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                         <a href="/" className="d-flex align-items-center p-0 text-dark">
                             <img alt="logo" src={logo} width="100px" />
                         </a>
@@ -28,39 +28,60 @@ import style from './style.module.css'
                             </CDBBtn>
                         </CDBBox>
                     </CDBBox>
-                    <CDBBox>
+                    <CDBBox className={style.linkBox} data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                         <p className="h5 mb-4" style={{ fontWeight: '600',  }}>
-                            Devwares
+                            Resources
                         </p>
                         <CDBBox display='flex' flex="column" style={{ cursor: 'pointer', padding: '0'}}>
-                             <span>Resources</span>
-                             <span>About Us</span>
-                             <span>Contact</span>
-                             <span>Blog</span>
+                             <span>About Monero</span>
+                             <span>Moneropedia</span>
+                             <span>Developers Guide</span>
+                             <span>User Guide</span>
+                            <span>Library</span>
+                            <span>Downloads</span>
                         </CDBBox>
                     </CDBBox>
-                    <CDBBox>
+                    <CDBBox className={style.linkBox} data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                         <p className="h5 mb-4" style={{ fontWeight: '600' }}>
-                            Help
+                            Reach Out
                         </p>
                         <CDBBox display='flex' flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-                            <span>Support</span>
-                            <span>Sign Up</span>
-                            <span> Sign In</span>
+                            <span>Workgrups</span>
+                            <span>Hangout</span>
+                            <span>Mailing List</span>
                         </CDBBox>
                     </CDBBox>
-                    <CDBBox>
+                    <CDBBox className={style.linkBox} data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                         <p className="h5 mb-4" style={{ fontWeight: '600' }}>
-                            Products
+                            Community
                         </p>
                         <CDBBox display='flex' flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-                             <span>Windframe</span>
-                            <span>Loop</span>
-                            <span>Contrast</span>
+                             <span>Merchants & Exchanges</span>
+                            <span>Stack Exchange</span>
+                            <span>BitcoinTalk</span>
+                            <span>Weblate</span>
+                        </CDBBox>
+                    </CDBBox>
+                    <CDBBox className={style.linkBox} data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                        <p className="h5 mb-4" style={{ fontWeight: '600' }}>
+                            The Monero Project
+                        </p>
+                        <CDBBox display='flex' flex="column" style={{ cursor: 'pointer', padding: '0' }}>
+                            <span>Open Alias</span>
+                            <span>Monero Research Lab(MRL)</span>
+                            <span>Press Kit</span>
+                            <span>Community Crowdfunding System.</span>
                         </CDBBox>
                     </CDBBox>
                 </CDBBox>
                 <small className="text-center mt-5">&copy; Monero, 20202 All rights reserved.</small>
+                <label className={style.footerLast} data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <a href="" className={style.linkUnderline}>Tor Onion services</a>
+                    <a href="" className={style.linkUnderline}>legal</a>
+                    <a href="" className={style.linkUnderline}>Source code</a>
+                    <a href="" className={style.linkUnderline}>Sitemap</a>
+                    <a href="" className={style.linkUnderline}>RSS Feed</a>
+                </label>
             </CDBBox>
         </CDBFooter>
     );
